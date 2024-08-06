@@ -54,7 +54,6 @@ To run the application:
 cd /path to project
 
 python Chess-Main
-
 ```
 
 This should launch the application.
@@ -66,6 +65,7 @@ This should launch the application.
 
 
 ##**Project Structure**
+
 ### 1. Chess-Main.py
 
 **Description**: The main driver file for the chess game. Handles user input and displays the current game state.
