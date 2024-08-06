@@ -57,7 +57,7 @@ To run the application:
 
 This should launch the application.
 
-![image1](/Demo/image-1.png)
+![image1](chess-engine/Demo/image-1.png)
 
 /
 
