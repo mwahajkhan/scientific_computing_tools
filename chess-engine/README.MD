@@ -59,8 +59,9 @@ This should launch the application.
 
 ![image_1](/Demo/image-1.png)
 
-![image_1](/Demo/image-2.png)
+/
 
+![image_1](/Demo/image-2.png)
 
 
 ## **Project Structure**
