@@ -45,36 +45,42 @@ pip install pygame numpy
 ### 1. Chess-Main.py
 
 **Description**: The main driver file for the chess game. Handles user input and displays the current game state.
-Functions:
-**loadImages()**: Loads images for all chess pieces and stores them in the IMAGES dictionary.
-**drawGameState(screen, gs, validMoves, sqSelected)**: Draws the game state on the screen.
-**drawBoard(screen):** Draws the chessboard with alternating colors for squares.
-**drawPieces(screen, gs, validMoves, sqSelected):** Draws the chess pieces based on their positions.
-**highlightSquares(screen, gs, validMoves, sqSelected):** Highlights the selected square and possible moves.
-**animateMove(move, screen, board, clock, validMoves, sqSelected):** Animates moves from one square to another.
-*8drawText(screen, text):** Displays text on the screen, such as checkmate or stalemate messages.
-**main():** Initializes the game, handles events, and updates the game state.
+
+**Functions:**
+
+- **loadImages()**: Loads images for all chess pieces and stores them in the IMAGES dictionary.
+- **drawGameState(screen, gs, validMoves, sqSelected)**: Draws the game state on the screen.
+- **drawBoard(screen):** Draws the chessboard with alternating colors for squares.
+- **drawPieces(screen, gs, validMoves, sqSelected):** Draws the chess pieces based on their positions.
+- **highlightSquares(screen, gs, validMoves, sqSelected):** Highlights the selected square and possible moves.
+- **animateMove(move, screen, board, clock, validMoves, sqSelected):** Animates moves from one square to another.
+- *8drawText(screen, text):** Displays text on the screen, such as checkmate or stalemate messages.
+- **main():** Initializes the game, handles events, and updates the game state.
 
 ### 2. chessEngine.py
 
 **Description:** Manages the chess game's state, including the board, moves, and game logic.
+
 Class: GameState
-**__init__(self):** Initializes the game state, setting up the board and move functions.
-**makeMove(self, move):** Executes a move and updates the game state.
-**undoMove(self):** Undoes the last move.
-**getValidMoves(self):** Returns all valid moves for the current game state.
-**getAllPossibleMoves(self):** Returns all possible moves without considering checks.
-**checkForPinsAndChecks(self):** Updates the game state to handle checks and pins.
-**getPawnMoves(self, row, col, moves), getRookMoves(self, r, c, moves)**, etc.: Methods for getting possible moves for each piece type.
-**squareUnderAttack(self, r, c):** Checks if a square is under attack.
-**getCastleMoves(self, r, c, moves):** Returns possible castling moves.
+
+- **__init__(self):** Initializes the game state, setting up the board and move functions.
+- **makeMove(self, move):** Executes a move and updates the game state.
+- **undoMove(self):** Undoes the last move.
+- **getValidMoves(self):** Returns all valid moves for the current game state.
+- **getAllPossibleMoves(self):** Returns all possible moves without considering checks.
+- **checkForPinsAndChecks(self):** Updates the game state to handle checks and pins.
+- **getPawnMoves(self, row, col, moves), getRookMoves(self, r, c, moves)**, etc.: Methods for getting possible moves for each piece type.
+- **squareUnderAttack(self, r, c):** Checks if a square is under attack.
+- **getCastleMoves(self, r, c, moves):** Returns possible castling moves.
 
 ### 3. smartMoveFinder.py
 
 **Description:** Implements the AI logic for determining the best move.
+
 **Functions:**
-**scoreBoard(gs):** Evaluates the board position and assigns a score.
-**isEndgame(gs):** Checks if the game is in the endgame phase.
-**findBestMove(gs, validMoves, returnQueue):** Finds the best move using an AI algorithm.
-**findMoveNegaMaxAlphaBeta(gs, validMoves, depth, alpha, beta, turnMultiplier):** Implements the NegaMax algorithm with alpha-beta pruning.
-**findRandomMove(validMoves):** Selects a random move from the list of valid moves.
+
+- **scoreBoard(gs):** Evaluates the board position and assigns a score.
+- **isEndgame(gs):** Checks if the game is in the endgame phase.
+- **findBestMove(gs, validMoves, returnQueue):** Finds the best move using an AI algorithm.
+- **findMoveNegaMaxAlphaBeta(gs, validMoves, depth, alpha, beta, turnMultiplier):** Implements the NegaMax algorithm with alpha-beta pruning.
+- **findRandomMove(validMoves):** Selects a random move from the list of valid moves.
