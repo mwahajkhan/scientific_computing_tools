@@ -22,7 +22,6 @@ To set up this project locally, follow these steps:
    ```bash
 
    git clone https://github.com/yourusername/chess-game.git
-
 ```
 
 2. Create Virtual environment:
@@ -30,10 +29,9 @@ To set up this project locally, follow these steps:
 ```bash
 
 > conda create --name chess_engine python=3.8
-
 ```
 
-###Dependencies
+### Dependencies
 
 pygame - For the graphical interface and game loop.
 numpy - For array manipulations and optimizations.
