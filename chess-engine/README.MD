@@ -49,12 +49,11 @@ To run the application:
 1. Project Setup (dependencies & virtual env refer up)
 2. Open terminal:
 
-   ```bash
 
-cd /path to project
+      > cd /path to project
 
-python Chess-Main
-```
+      > python Chess-Main
+
 
 This should launch the application.
 
@@ -64,7 +63,7 @@ This should launch the application.
 
 
 
-##**Project Structure**
+## **Project Structure**
 
 ### 1. Chess-Main.py
 
