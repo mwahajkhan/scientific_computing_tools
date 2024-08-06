@@ -19,6 +19,7 @@ This chess game is designed for users who want a straightforward chess-playing e
 To set up this project locally, follow these steps:
 
 1. **Clone the repository**:
+
    ```bash
    git clone https://github.com/yourusername/chess-game.git
 ```
