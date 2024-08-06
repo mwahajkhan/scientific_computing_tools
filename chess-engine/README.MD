@@ -43,16 +43,20 @@ To run the application:
 
 1. Project Setup (dependencies & virtual env refer up)
 2. Open terminal:
+
    ```bash
+
 cd /path to project
+
 python Chess-Main
+
 ```
 
 This should launch the application.
 
-![image_1]('images1.png')
+![image_1]('/Demo/image-1.png')
 
-![image_1]('images1.png')
+![image_1]('/Demo/image-2.png')
 
 
 
