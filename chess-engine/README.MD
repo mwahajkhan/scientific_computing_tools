@@ -42,7 +42,7 @@ You can install the required dependencies using:
 pip install pygame numpy
 ```
 
-###Demo 
+### Demo 
 
 To run the application:
 
